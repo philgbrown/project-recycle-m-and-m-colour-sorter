@@ -1,4 +1,4 @@
-/*
+    /*
     * PXT_M_and_M extention
     *
     * Version 2.01 18/11/2021
@@ -11,7 +11,7 @@
     * Five blocks deal with the TCS32725: 
     * get red light component, get green light component, get blue light component, get total light intensity and get the colour of a M & M confectionery (0-6).
     * The colour component readings are normalised against the total light reading.
-    * Interrupts are disabled in the sensor and no provision is made to control the inbuilt white illumination LED. The illumination LED is permanentlky on.
+    * Interrupts are disabled in the sensor and no provision is made to control the inbuilt white illumination LED. The illumination LED is permanently on.
     * The M & M colour block returns a number between 0 and 6. Encoding is shown below.
     * Refer to Adafruit docs and tutorial for more information.
     * 
