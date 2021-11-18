@@ -1,5 +1,6 @@
 {
     "name": "Project recycle M and M colour sorter",
+    "version": "0.0.1",
     "description": "",
     "dependencies": {
         "core": "*",
