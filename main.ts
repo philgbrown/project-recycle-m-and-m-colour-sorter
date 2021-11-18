@@ -204,14 +204,16 @@ namespace M_and_M {
         let green: number = Math.round((RGBC_G / RGBC_C) * 255);            // Normalise green value
         let blue: number = Math.round((RGBC_B / RGBC_C) * 255);             // Normalise blue value
         let clear: number = RGBC_C;                                         // Get clear light level
+        /*
         basic.showString("R=");
         basic.showNumber(red);                                              // Only
         basic.showString("G=");
-        basic.showNumber(green);                                            // required for
+        basic.showNumber(green);                                            // Required for Colour
         basic.showString("B=");
         basic.showNumber(blue);                                             // Calibration
         basic.showString("C=");
         basic.showNumber(clear);                                            // Run
+        */
         let colour: number = BLANK;                                         // Start with no M and M
         if (clear > 550){                                                   // M & M in chain position 1?
         if (clear < 680 && red > 80 && green < 100 && blue < 85) {          // Yes, Brown M & M?
