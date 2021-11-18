@@ -212,8 +212,9 @@ namespace M_and_M {
         basic.showNumber(blue);                                             // Calibration
         basic.showString("C=");
         basic.showNumber(clear);                                            // Run
-        let colour: number = UNKNOWN;                                       // Start with unknown colour
-        if (clear < 680 && red > 80 && green < 100 && blue < 85) {          // Brown M & M?
+        let colour: number = BLANK;                                         // Start with no M and M
+        if (clear > 550){                                                   // M & M in chain position 1?
+        if (clear < 680 && red > 80 && green < 100 && blue < 85) {          // Yes, Brown M & M?
             colour = BROWN;                                                 // Yes
         }
         else if (clear < 790 && red > 100 && green < 85 && blue < 75) {     // Red M & M?
@@ -232,7 +233,8 @@ namespace M_and_M {
             colour = BLUE;                                                  // Yes
         }
         else {
-            colour = BLANK;                                                 // Broken, missing, discoloured or chipped M & M
+            colour = UNKNOWN;                                                 // Broken, missing, discoloured or chipped M & M
+        }
         }
         return colour;
     }
