@@ -213,10 +213,10 @@ namespace M_and_M {
         basic.showString("C=");
         basic.showNumber(clear);                                            // Run
         let colour: number = UNKNOWN;                                       // Start with unknown colour
-        if (clear < 680 && clear > 600 && red > 80 && green < 100 && blue < 85) {   // Brown M & M?
+        if (clear < 680 && red > 80 && green < 100 && blue < 85) {          // Brown M & M?
             colour = BROWN;                                                 // Yes
         }
-        else if (clear > 700 && red > 100 && green < 85 && blue < 75) {     // Red M & M?
+        else if (clear < 790 && red > 100 && green < 85 && blue < 75) {     // Red M & M?
             colour = RED;                                                   // Yes
         }
         else if (clear > 820 && red > 120 && green < 80 && blue < 60) {     // Orange M & M?
