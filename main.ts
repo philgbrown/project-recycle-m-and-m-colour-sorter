@@ -204,6 +204,10 @@ namespace M_and_M {
         let green: number = Math.round((RGBC_G / RGBC_C) * 255);            // Normalise green value
         let blue: number = Math.round((RGBC_B / RGBC_C) * 255);             // Normalise blue value
         let clear: number = RGBC_C;                                         // Get clear light level
+        basic.showNumber(red);                                              // Only
+        basic.showNumber(green);                                            // required for
+        basic.showNumber(blue);                                             // Calibration
+        basic.showNumber(clear);                                            // Run
         let colour: number = UNKNOWN;                                       // Start with unknown colour
         if (clear < 580 && clear > 540 && red > 80 && green < 100 && blue < 85) {   // Brown M & M?
             colour = BROWN;                                                 // Yes
